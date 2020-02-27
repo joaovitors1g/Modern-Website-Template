@@ -1,0 +1,104 @@
+.talk-to-us {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-top: 1rem;
+  }
+}
+.contact {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.contact .grid {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+  justify-items: center;
+
+  .google-maps {
+    width: 100%;
+    height: 100%;
+  }
+
+  #gmap_canvas{
+    width: 100%;
+    min-height: 100%;
+    pointer-events: none;
+  }
+  
+  .contact-form {
+    width: 70%;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .input-group {
+        position: relative;
+        width: 100%;
+        label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px 0;
+          font-size: 1rem;
+          color: #000;
+          pointer-events: none;
+          transition: 0.5s;
+        }
+        input:focus ~ label,
+        input:valid ~ label,
+        textarea:focus ~ label,
+        textarea:valid ~ label {
+          top: -18px;
+          left: 0;
+          color: darken($primary-color, 20%);
+          font-size: 12px;
+        }
+        input {
+          padding: 1rem;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid $primary-color;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+        textarea {
+          border: none;
+          outline: none;
+          border-bottom: 2px solid $primary-color;
+          margin-bottom: 1rem;
+          resize: none;
+          padding-left: 1rem;
+          padding-top: 0.8rem;
+          width: 100%;
+          &::placeholder {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+          }
+        }
+      }
+
+      button {
+        padding: 0.6rem 2rem;
+        background: transparent;
+        transition: 0.25s;
+        border-radius: 3px;
+        color: black;
+        font-weight: 400;
+        outline: none;
+        border: 1px solid $primary-color;
+        width: 30%;
+        position: relative;
+        cursor: pointer;
+        i {
+          margin-left: 0.4rem;
+        }
+        &:hover {
+          color: white;
+          box-shadow: inset 0 -3.25em 0 0 $primary-color;
+        }
+      }
+    }
+  }
+}

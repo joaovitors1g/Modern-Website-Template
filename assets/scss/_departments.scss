@@ -1,0 +1,28 @@
+.departments-section {
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  width: 70%;
+  grid-gap: 1rem;
+  .department {
+    text-align: center;
+    width: 100%;
+    border: 1px solid $secondary-color;
+    h3 {
+      background: $secondary-color;
+      color: #fff;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+    }
+    .product-list {
+      list-style-type: none;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      li {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

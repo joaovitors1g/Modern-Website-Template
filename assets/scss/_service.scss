@@ -1,0 +1,31 @@
+.services {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.service {
+  text-align: center;
+  p {
+    line-height: 1.4em;
+  }
+  &:hover i {
+    color: darken($primary-color, 20%);
+  }
+  h2 {
+    padding: 1rem 0;
+    font-weight: 300;
+  }
+  i {
+    color: $primary-color;
+  }
+}
+
+.service:nth-of-child(1) {
+  -ms-grid-column: 1;
+}
+.service:nth-of-child(2) {
+  -ms-grid-column: 2;
+}
+.service:nth-of-child(3) {
+  -ms-grid-column: 3;
+}

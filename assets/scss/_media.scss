@@ -1,0 +1,120 @@
+
+@media(max-width: 1024px) {
+  .contact .grid .contact-form form button {
+    width: 40%;
+  }
+}
+@media(max-width: 800px) {
+  .departments-section, .contact .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .contact {
+    margin-bottom: 1.5rem;
+    .talk-to-us {
+      padding: 0 2rem;
+    }
+    .grid .contact-form form button {
+      width: 60%;
+    }
+  }
+  .google-maps {
+    max-width: 70%;
+    margin-bottom: 1.5rem;
+  }
+  .hide-md {
+    display: none !important;
+  }
+  .services {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .nav {
+    padding: 0;
+    .logo {
+      padding: 1rem;
+    }
+  }
+  .nav-list {
+    position: absolute;
+    flex-direction: column;
+    z-index: 999;
+    top: 100%;
+    min-width: 100%;
+    background: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0%;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    &.show {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: calc(100% + 5rem);
+      opacity: 1;
+    }
+  }
+}
+
+@media(min-width: 850px) {
+  .hide-lg {
+    display: none;
+  }
+  .google-maps {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media(max-width: 1500px) {
+  .slide {
+    min-height: unset;
+  }
+}
+
+@media(min-width: 1500px) {
+  .slide {
+    min-height: unset;
+  }
+  .fixed {
+    width: 56.3%;
+  }
+}
+@media(max-width: 420px) {
+  #team-slide {
+    .slick-prev { 
+      left: -30px;
+    }
+    .slick-next {
+      right: -30px;
+    }
+  }
+  .listing {
+    grid-template-columns: 1fr;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .meet-our-team {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    p {
+      line-height: 2em;
+    }
+  }
+  .contact .grid .contact-form form button {
+    width: 100%;
+  }
+  .talk-to-us {
+    p {
+      line-height: 2em;
+    }
+  }
+}
+

@@ -1,0 +1,10 @@
+.instagram-slide {
+  .slick-arrow {
+    top: 40%;
+    background: $primary-color;
+    border: none;
+    &:hover {
+      background: darken($primary-color, 15%);
+    }
+  }
+}

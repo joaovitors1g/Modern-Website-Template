@@ -1,0 +1,76 @@
+$values: (1, 2, 3, 4, 5);
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Slide Things */
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  background: none;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 0.7rem;
+  z-index: 2;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+.slick-next {
+  right: 0;
+}
+
+/* Slide Things END */
+@each $value in $values {
+  .px-#{$value} {
+    padding: 0 #{$value}rem;
+  }
+}
+
+@each $value in $values {
+  .py-#{$value} {
+    padding: #{$value}rem 0;
+  }
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+hr {
+  width: 25%;
+  margin: 1rem 0;
+  border-color: lighten($primary-color, 20%);
+  border-width: 1px;
+}
+
+.color-primary {
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+p {
+  margin-block-start: 0.5em;
+}
